@@ -1,0 +1,95 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- student:
+    use_entities: true
+- problem_log:
+    use_entities: true
+- problem_eduroam:
+    use_entities: true
+- pracownik:
+    use_entities: true
+- prac_dostep:
+    use_entities: true
+- prac_edit:
+    use_entities: true
+- kandydat:
+    use_entities: true
+- kand-SIR:
+    use_entities: true
+- biblioteka:
+    use_entities: true
+- sYES:
+    use_entities: true
+- sNO:
+    use_entities: true
+
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Czy to pomoglo roziwazac twoj problem?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Do usłyszenia
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_problem:
+  - text: W czym masz problem?
+  utter_studentmail:
+  - text: Proszę o upewnienie się, że przy konfiguracji urządzenia używasz maila z domeny stud.prz.edu.pl. https://helpdesk.prz.edu.pl/faq/studenci/siec-bezprzewodowa-eduroam
+  utter_studenthaslo:
+  - text: Proszę o upewnienie się, że wpisywany login i hasło są poprawne. Przypominam, że konta absolwentów i osób skreślonych z listy studentów są aktywne przez dwa miesiące od ukończenia studiów lub daty skreślenia z listy studentów.
+  utter_solved:
+  - text: Czy udało się rozwiązać problem?
+  utter_niepomoglo:
+  - text: Prosimy o skontaktowanie sie z helpdeskiem PRz
+  utter_studenteduroam:
+  - text: Proszę wejść na tę stronę https://eduroam.prz.edu.pl/
+  utter_dostep:
+  - text: Czy nie ma Pan/Pani dostępu do żadnego systemu takiego jak Poczta, APD lub USUS? (Proszę napisać T/N)
+  utter_dostepbrak:
+  - text: Proszę o sprawdzenie wpisów w zakładce Komunikaty (w lewym menu) – być może jest to spowodowane czasową niedostępnością systemu.
+  utter_dostepdziala:
+  - text: Proszę poszukać rozwiązania w poniższym linku https://helpdesk.prz.edu.pl/faq/pracownicy/problem-z-logowaniem-co-robic?faq=3#faq_3
+  utter_edit:
+  - text: Proszę wejść w ten link https://w.prz.edu.pl/wyszukiwarka/informacje.html#wyszukiwarka-dane
+  utter_SIR1:
+  - text: Uwaga! Osoby przyjęte na I rok studiów powinny szukać informacji już jako Student!
+  utter_SIR2:
+  - text: Proszę wejść w ten link https://helpdesk.prz.edu.pl/faq/kandydaci/nie-moge-zalogowac-sie-do-sir-co-robic
+  utter_Bibl:
+  - text: Proszę wejść w ten link https://helpdesk.prz.edu.pl/biblioteka/system-biblioteki-prz
+  utter_+dostep:
+  - text: XDDDD
+  utter_-dostep:
+  - text: DXXXX
+
+
+actions: []
+forms: {}
+e2e_actions: []

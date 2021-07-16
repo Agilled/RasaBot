@@ -1,0 +1,186 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - witam
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - tak
+    - dziala
+    - pomoglo
+    - dziekuje dziala
+    - dzieks byczku wszystko git
+    - kurde ale te boty to madre sa
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nie
+    - mysle ze nie
+    - nie pomoglo
+    - nie dziala
+    - nic nie dalo
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: problem_log
+  examples: |
+    - nie moge sie zalogowac
+    - usos
+    - problem z logowaniem
+    - logowanie nie powiodlo sie
+    - nie pamietam hasla
+
+- intent: problem_eduroam
+  examples: |
+    - wifi
+    - siec
+    - nie mam internetu
+    - nie moge polaczyc sie
+    - eduroam
+    - konfiguracja sieci
+    - jak snokfigurowac siec
+
+- intent: student
+  examples: |
+    - jestem studentem
+    - student
+    - studiuje
+    - uczen
+    - pierwszy rok
+
+- intent: pracownik
+  examples: |
+    - jestem pracownikiem
+    - pracuje
+    - pracownik
+
+- intent: kandydat
+  examples: |
+    - jestem kandydatem na studia
+    - kandydat
+    - kandyduje na studia
+    - chcialbym studiowac
+
+- intent: biblioteka
+  examples: |
+    - jestem uzytkownikiem biblioteki
+    - biblioteka
+    - biblotekarz
+    - Jak założyć konto w bibliotece?
+    - Jak odzyskać hasło do konta bibliotecznego?
+    - Jak przedłużyć standardowy termin oczekiwania na książkę zamówioną (wypożyczoną przez innego Czytelnika w momencie składania zamówienia)?
+    - Jak przedłużyć termin odbioru książki zamówionej?
+    - Jak przedłużyć termin zwrotu wypożyczonej książki – przed upływem terminu zwrotu?
+    - Jak korzystać z czasopism elektronicznych za pośrednictwem komputera domowego?
+
+- intent: prac_edit
+  examples: |
+    - chce edytowac dane
+    - Chcę edytować dane dostępne w wyszukiwarce systemu portalowego PRz
+    - chce zmienic dane
+
+
+- intent: prac_dostep
+  examples: |
+    - jestem pracownikiem, nie mam dostepu do usos
+    - nie mam dostepu do usos
+    - nie moge sie zalogowac do usos
+    - nie moge sie zalogowac do usosa
+    - nie moge sie zalogowac do poczty
+    - nie moge sie zalogowac do apd
+    - nie moge sie zalogowac do niczego
+
+- intent: kand-SIR
+  examples: |
+    - Nie mogę zalogować się do SIR
+    - SIR
+    - problem z logowaniem
+    - jestem kandydatem, nie moge sie zalogowac
+
+- intent: sYES
+  examples: |
+    - T
+- intent: sNO
+  examples: |
+    - N

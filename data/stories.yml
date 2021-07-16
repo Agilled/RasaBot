@@ -1,0 +1,179 @@
+version: "2.0"
+
+stories:
+
+#  - story: happy path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+
+- story: student path-log+
+  steps:
+  - intent: student
+  - action: utter_problem
+  - intent: problem_log
+  - action: utter_studenthaslo
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: student path-log-
+  steps:
+  - intent: student
+  - action: utter_problem
+  - intent: problem_log
+  - action: utter_studenthaslo
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: student path-eudroam+
+  steps:
+  - intent: student
+  - action: utter_problem
+  - intent: problem_log
+  - action: utter_studenteduroam
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: student path-eudroam-
+  steps:
+  - intent: student
+  - action: utter_problem
+  - intent: problem_log
+  - action: utter_studenteduroam
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: prac path-systemy--
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_dostep
+  - action: utter_dostep
+  - intent: sNO
+  - action: utter_-dostep
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: prac path-systemy+-
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_dostep
+  - action: utter_dostep
+  - intent: sYES
+  - action: utter_dostepdziala
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: prac path-systemy-+
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_dostep
+  - action: utter_dostep
+  - intent: sNO
+  - action: utter_dostepbrak
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: prac path-systemy++
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_dostep
+  - action: utter_dostep
+  - intent: sYES
+  - action: utter_+dostep
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: prac path-edit-
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_edit
+  - action: utter_edit
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: prac path-edit+
+  steps:
+  - intent: pracownik
+  - action: utter_problem
+  - intent: prac_edit
+  - action: utter_edit
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: kand path-
+  steps:
+  - intent: kandydat
+  - action: utter_problem
+  - action: utter_SIR1
+  - intent: kand-SIR
+  - action: utter_SIR2
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
+
+- story: kand path+
+  steps:
+  - intent: kandydat
+  - action: utter_problem
+  - action: utter_SIR1
+  - intent: kand-SIR
+  - action: utter_SIR2
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: bibl path+
+  steps:
+  - intent: biblioteka
+  - action: utter_problem
+  - action: utter_Bibl
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: bibl path-
+  steps:
+  - intent: biblioteka
+  - action: utter_problem
+  - action: utter_Bibl
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_niepomoglo
